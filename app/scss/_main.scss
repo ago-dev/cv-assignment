@@ -1,0 +1,53 @@
+main {
+    padding: 20px;
+    color: $default-color;
+
+    h2 {
+        width: fit-content;
+        font-size: 30px;
+        margin: 20px 0;
+        position: relative;
+    }
+}
+
+.exp {
+    >:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.exp-title {
+    padding-top: 2px;
+    font-weight: 800;
+    background-color: $default-color;
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.exp-description {
+    opacity: .8;
+}
+
+.topics {
+    li {
+        &::before {
+            content: '- ';
+        }
+    }
+}
+
+.stripe {
+    width: 110%;
+    position: absolute;
+    bottom: 3px;
+    height: 10px;
+    background-color: rgba(231, 76, 60, .3);
+    z-index: -1;
+}
+
+hr {
+    opacity: .4;
+}
